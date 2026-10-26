@@ -88,7 +88,7 @@ If you use Claude Code, you can also install the two skills from the [Family IT 
 ## Making it yours
 
 - Delete any rule that doesn't fit how you work. The files are plain text.
-- Your copy is yours. Later changes to this repository don't reach it by themselves; run the prompt again to look at what changed.
+- Later changes to this repository don't reach your copy by themselves. Run the prompt again to go through what changed.
 - Rules for one project go in that project's own instruction file, not in the router.
 - To add a rule, ask your AI to write one with rule-creator, which writes rows in this "when this happens, do that" shape and tells you how to check them.
 
