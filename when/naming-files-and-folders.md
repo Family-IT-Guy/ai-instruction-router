@@ -26,7 +26,7 @@ A name is also spoken back to the user in every reply about the thing, so a figu
 
 ## Each folder says what it answers
 
-A folder's main file (a project's `CLAUDE.md`, otherwise its `README.md`) opens with one sentence saying what the folder answers, because a session choosing where to look reads that sentence and the folder name, and nothing else. When a name seems to need that sentence to be understood, first ask whether the name is wrong: a rename beats an annotation, and an annotation beats nothing.
+A folder's main file (a project's instruction file, otherwise its `README.md`) opens with one sentence saying what the folder answers, because a session choosing where to look reads that sentence and the folder name, and nothing else. When a name seems to need that sentence to be understood, first ask whether the name is wrong: a rename beats an annotation, and an annotation beats nothing.
 
 ## A file is current state or a dated record
 

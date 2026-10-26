@@ -1,6 +1,6 @@
 # Router
 
-This file is the list of moments that apply in every session, any folder. Moments that belong to one project live in that project's own CLAUDE.md.
+This file is the list of moments that apply in every session, any folder. Moments that belong to one project live in that project's own instruction file, the one this tool loads when working in that project.
 
 A moment is a word, a tool, a file, or a claim that is present now. "When relevant" is not a moment.
 
@@ -11,7 +11,7 @@ When a row matches, do the action. If the action is "open", read that file befor
 | When | Do |
 |---|---|
 | First turn of a new session | If the mode is unset, ask thinking or working before substantive work. Do not announce CONTRACT; it is already loaded. |
-| This work has a term CONTRACT does not hold — a folder's default mode, a project's division of work, a constraint that would be false globally | Put that to the user as a decision. Write it into that project's CLAUDE.md only if the user says yes: deltas only, never a restatement of CONTRACT. |
+| This work has a term CONTRACT does not hold — a folder's default mode, a project's division of work, a constraint that would be false globally | Put that to the user as a decision. Write it into that project's instruction file only if the user says yes: deltas only, never a restatement of CONTRACT. |
 | The user brings a goal or a consequential choice is unresolved | Prepare from the sources first. Then ask one consequential question at a time, choosing the next question by what changes depending on its answer, and contribute a recommendation. Existing answers and approved work remain valid. |
 | Before choosing an approach for a new project, or before adding a part to work that already runs | Ask the user how much complexity they want. The first option is always the version that runs soonest with what already exists, launched and then improved from what its use shows; recommend it unless it cannot do the job, and say why when it cannot. For each larger option, name what it buys, the effort and upkeep it creates, and the record from real use that would justify it. Ask again before materially increasing complexity. The failure this prevents is weeks spent building for a scale or a case that use never showed. |
 | Compaction is coming, or context is being summarized | Keep the current goal and position, and decisions not yet written to a source document. Reference files by path. Do not quote them into the summary. |
