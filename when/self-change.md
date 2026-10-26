@@ -1,0 +1,12 @@
+# Skills, rules, and self-change
+
+Opened because a rule, skill, hook, or permission is being created, edited, audited, or removed. The nine tests in CONTRACT.md already apply.
+
+- When a correction or confirmation looks like a cross-cutting rule: propose it in the same turn with exact text and destination; load the rule-creator skill first if it is installed; the user approves before any write.
+- When creating or editing any skill: load the skill-author and rule-creator skills first if they are installed; project-local skills live with the project.
+- When building any mechanism: it logs every run from its first commit; decide BLOCK vs REPORT before designing; check a permissions entry, then a settings change, then a hook, in that cost order; list the mechanisms already firing at that moment before adding one.
+- Before installing a hook, and after editing one: run it on a sample event and check it exits 0 with output the harness can parse, which is the only thing that separates a hook that runs from one that died on a parse error. Then take its first real verification from the path that will run it — one run fired by the harness on a real event, read back from the hook's own log, never `bash <path>` typed by hand. Hooks discard their errors, so a broken hook is indistinguishable from one correctly staying quiet; and a file created without the executable bit passes every hand-run test while the harness cannot run it at all.
+- When judging whether a hook is working, has stopped, or should go: read its own log before saying anything about it. Reading `settings.json` alone calls a deliberately retired hook dead weight, and matching a log to its hook by filename is wrong, because hooks write wherever their source says.
+- When proposing a rule's removal: three findings justify it (it fired and the work would have gone the same way without it; the situation it was written for no longer exists; another rule now covers it). That a rule has NEVER fired is not grounds — a silently broken rule and a never-triggered one are indistinguishable from outside.
+- When a rule, principle, or rules file is removed: copy it to `~/.agent/dropped-rules/<YYYY-MM-DD>-<name>.md` in the same turn, first line saying what it required and why it went. A removal written up after the turn ends is not written up at all, and without the copy nothing can argue the deletion back.
+- When rules firing on the same action conflict, duplicate each other, or cannot be parsed into a clear instruction: report it in that turn, briefly, saying whether to fix now or defer.

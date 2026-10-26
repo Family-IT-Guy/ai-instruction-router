@@ -1,0 +1,11 @@
+# When does work need an additional independent reader?
+
+When accepting an artifact or preparing to act on a plan, first compare it with the original objective and the actual evidence. Commission an additional reader when a consequential uncertainty remains that requires independent challenge or expertise the model lacks. A material assumption in the model's own plan can warrant that challenge. A particular model, number of reviewers or artifact type does not establish that need by itself.
+
+Name the question, the original requirements, the exact artifact and relevant evidence, and what the answer would change. Give the reader the sources directly. Where a premise is unvalidated, label it as an assumption to challenge rather than disguising the author's intention as an independent requirement. Keep the assignment bounded to the uncertainty; another identical whole-artifact pass needs its own reason.
+
+The brief carries the original requirements, the artifacts and reproducible evidence, not the author's explanation of why the work is correct. The reader first writes down, from the requirement alone, what an artifact meeting it would have to contain, do or handle, so the artifact does not set its expectations; then marks each item present and correct, present and wrong, or absent; then reads for faults the list did not anticipate; and verifies every finding before reporting it, dropping any it cannot demonstrate, because a reported fault that is not there teaches the reader to stop checking. Run the reader read-only: a fresh subagent or a separate session that cannot change the work. Capability and access to decisive evidence matter; agreement between models is not acceptance evidence.
+
+Check material findings against the original sources and the result. Correct actual failures. Dismiss unsupported claims with evidence. A genuine requirement cannot be waived by lowering its severity. New requirements or consequential scope changes reach the user before becoming prerequisites. Stop when the named uncertainty is resolved; corrected material does not automatically require a second reviewer run. Check the correction through the method that reveals the original failure.
+
+Public result approval, the two-turn send gate and production authorization remain the user's.
