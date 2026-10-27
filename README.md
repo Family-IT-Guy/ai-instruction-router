@@ -62,6 +62,7 @@ Help me decide which parts of the instruction set at https://github.com/Family-I
 
 5. When every part is decided, list what I kept, changed and dropped. Then show me the plan: each file or setting you will change and the exact text going into it. Fit the plan to what you found in step 2:
    - If you can open files when you need them, keep the procedures as separate files, put CONTRACT, ROUTER and HARD wherever this tool loads instructions in every session, and make every file path in ROUTER point to where the procedures actually are.
+   - If this tool asks permission before opening files outside the current folder, add the setting that lets it open the procedures folder without asking, and tell me what you set.
    - If this tool keeps uploaded files, put CONTRACT, ROUTER and HARD in its standing instructions, the procedures in uploaded files, and reword each router row from "open this file" to "consult this file".
    - If there is only a box for standing instructions, condense the parts I kept to fit it, and tell me what the condensing left out.
    - Put the skills wherever this tool loads skills. If it has no such place, give me their text to save or paste.
@@ -78,7 +79,7 @@ Help me decide which parts of the instruction set at https://github.com/Family-I
 If you'd rather do it yourself:
 
 1. Put `CONTRACT.md`, `ROUTER.md` and `HARD.md` wherever your tool loads instructions at the start of every session.
-2. Keep the `when/` folder where your AI can open it, and change the paths in `ROUTER.md` if you put it somewhere other than `~/.agent/when/`. If your AI can't open files on its own, upload the procedures where it can consult them, or leave them out.
+2. Keep the `when/` folder where your AI can open it, and change the paths in `ROUTER.md` if you put it somewhere other than `~/.agent/when/`. If your tool asks permission before opening files outside the current folder, allow that folder in its settings, or it will ask each time a procedure is needed. If your AI can't open files on its own, upload the procedures where it can consult them, or leave them out.
 3. Optional: add `reply.style.md` to your standing instructions, or wherever your tool keeps a reply style.
 
 The first time you ask for something substantive, the AI asks whether you're in thinking or working mode: thinking means discuss and plan, working means carry out what you've agreed.
